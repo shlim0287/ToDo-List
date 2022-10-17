@@ -1,3 +1,4 @@
+// digital clock
 const secondHand=document.querySelector(".sec-hand")
 const minHand = document.querySelector(".min-hand");
 const hourHand = document.querySelector(".hour-hand");
@@ -18,4 +19,17 @@ setDate = () => {
   };
    
   setInterval(setDate, 1000);
+//   analog clock
+const analogClock=document.querySelector("h2")
+function getClock(){
+    now=new Date();
+    const secondsA = String(now.getSeconds()).padStart(2,"0");
+    const minsA = String(now.getMinutes()).padStart(2,"0");
+    const hoursA =String(now.getHours()).padStart(2,"0");
+    analogClock.innerText=`${hoursA}:${minsA}:${secondsA}`;
+}
+
+getClock();
+setInterval(getClock,1000);
+
 

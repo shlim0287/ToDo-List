@@ -14,10 +14,16 @@
         placeholder="write your name."
         required
         maxlength="15"
+        style="border: none; 
+        background-color: transparent;"
       />
-      <input type="submit" value="enter" />
+      <input type="submit" value="enter" style="border: none; background-color: transparent;"/>
     </form>
     <h1 class="greeting hidden"></h1>
+    <form id="todo-form">
+      <input type="text" placeholder="What is your main focus for today?" style="border: none; background-color:transparent"/>
+    </form>
+    <ul id="todo-list"></ul>
     <h2 class="analclock">00:00</h2>
     <section>
       <div class="digclock">
@@ -34,7 +40,8 @@
     <script src="JS/web.js"></script>
     <script src="JS/clock.js"></script>
     <script src="JS/quote.js"></script>
-    <script src="JS/background.js"></script>        
+    <script src="JS/background.js"></script>
+    <script src="JS/ToDoList.js"></script>        
     </div>
   </body>
 </html>

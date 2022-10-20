@@ -42,8 +42,23 @@ const quotes = [
     },
   ];
 
+function handleHover(){
+  authorIn.classList.remove("hidden");
+}
+function handleHovers(){
+  authorIn.classList.add("hidden");
+}
+
   const quoteIn= document.createElement("span");
   const authorIn=document.createElement("span");
+  authorIn.classList.add("hidden")
+  quoteIn.addEventListener("mouseover",handleHover);
+  quoteIn.addEventListener("mouseout",handleHovers);
+  if(quoteIn.addEventListener("mouseover",handleHover)){
+    handleHover();
+  }else{
+    handleHovers();
+  }
   const div =document.querySelector("#quote")
   const randomQuote= quotes[Math.floor(Math.random()*quotes.length)];
   div.append(quoteIn);

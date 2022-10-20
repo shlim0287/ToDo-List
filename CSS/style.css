@@ -1,6 +1,6 @@
 @import"background.css";
 @import"clock.css";
-
+@import"page-design.css";
 .hidden{
     display: none;
 }
@@ -8,6 +8,7 @@ body {
     text-align: center;
     background-size: auto 100%;
     background-position: center center;
+    color: white;
 
   }
   h1 {
@@ -21,7 +22,7 @@ input:first-child{
 
   }
 input::placeholder{
-  color:black;
+  color:white;
 
 }
 ul{
@@ -32,3 +33,22 @@ ul{
   border: none;
   background-color: transparent;
 }
+
+#weather{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#weather div:first-child{
+  font-weight: 400;
+}
+#weather div:last-child{
+  font-weight: 250;
+}
+i{
+  color: white;
+}
+
+
+

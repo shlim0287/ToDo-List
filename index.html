@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,23 +9,29 @@
     <title>ToDo List</title>
   </head>
   <body>
-    <form class="login-form hidden">
-      <input
-        type="text"
-        placeholder="write your name."
-        required
-        maxlength="15"
-        style="border: none; 
-        background-color: transparent;"
-      />
-      <input type="submit" value="enter" style="border: none; background-color: transparent;"/>
-    </form>
-    <h1 class="greeting hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="What is your main focus for today?" style="border: none; background-color:transparent"/>
-    </form>
-    <ul id="todo-list"></ul>
-    <h2 class="analclock">00:00</h2>
+    <div class="top-row">
+      <div class="region-top-left">
+        <div class="link-form">
+          <span >links</span>
+        </div>
+        <div class="search-form">
+          <div class="search-icon">
+        <form>
+          <i class="fas fa-search " style="color: white;"></i>
+        </form>
+      </div>
+      </div>
+      </div>
+      <div class="region-top-right">
+        <div class="weather-box">   
+        <div id="weather">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div> 
+    </div>
+  <div class="mid-row">
     <section>
       <div class="digclock">
         <div class="clock-face">
@@ -35,13 +42,37 @@
         </div>
       </div>
     </section>
+    <h2 class="analclock">00:00</h2>
+    <div>
+      <form class="login-form hidden">
+        <input
+          type="text"
+          placeholder="write your name."
+          required
+          maxlength="15"
+          style="border: none; 
+          background-color: transparent;"
+        /> 
+        <input type="submit" value=""  style="border: none; background-color: transparent; color: white;"/>
+      </form>
+      <h1 class="greeting hidden"></h1>
+      <form id="todo-form">
+        <input type="text" placeholder="What is your main focus for today?" style="border: none; background-color:transparent"/>
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+  </div>
+
+  <div class="bottom-row">
     <div id="quote">
     </div>
+  </div>
     <script src="JS/web.js"></script>
     <script src="JS/clock.js"></script>
     <script src="JS/quote.js"></script>
     <script src="JS/background.js"></script>
-    <script src="JS/ToDoList.js"></script>        
+    <script src="JS/ToDoList.js"></script>
+    <script src="JS/weather.js"></script>        
     </div>
   </body>
 </html>
